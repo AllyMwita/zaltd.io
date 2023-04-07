@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div id="sideNav">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Practice Area</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <div id="menuBtn">
+        <img src="./images/bars.ico" id="menu" />
+      </div>
+
+
+    <section class="services" id="services">
+        <div class="title-text">
+  
+        <div class="title-text">
+          <h1>Our Service</h1>
+        </div>
+  
+        <div class="box-container">
+  
+            <div class="box">
+                <p>We offer a wide range of services to meet all of your construction and design needs. Our team of experienced professionals is dedicated to providing exceptional workmanship and customer service, ensuring that every project we undertake is completed to the highest standards.
+
+                    <h3>Architectural Services:</h3>
+                    Our architectural services include project planning and design, architectural drawings and blueprints, and construction documentation. Our team of skilled architects will work closely with you to create a design that meets your needs and preferences, while also incorporating the latest trends and technologies in the industry.
+                    
+                    <h3>Building Roads and Civil Engineering Services:</h3>
+                    Our building, roads, and civil engineering services include excavation, grading, paving, asphalt maintenance, and more. Our team of experts uses state-of-the-art technology and equipment to ensure that every project is completed on time and within budget, while also prioritizing safety, quality, and environmental responsibility.
+                    
+                    <h3>Construction Services:</h3>
+                    Our construction services include new home construction, renovation, and commercial building construction. Our team of experienced professionals will work closely with you throughout every stage of the process, ensuring that your vision is brought to life with precision and care.
+                    
+                    <h3>Design and Build:</h3>
+                    Our design and build services combine the best of both worlds, offering comprehensive project management for a wide range of residential and commercial projects. Our team of experts will work with you to create a design that meets your needs and preferences, while also overseeing the construction process to ensure that everything is completed efficiently and effectively.
+                    
+                    <h3>Project Management:</h3>
+                    Our project management services cover all aspects of project planning and execution, including risk management, procurement, stakeholder management, and more. Our team of experts will work closely with you to ensure that your project is completed on time, within budget, and to the highest standards of quality.
+                    
+                    <h3>Interior Design:</h3>
+                    Our interior design services include furniture selection, lighting design, and art curation, among others. Our team of experienced professionals will work closely with you to create a beautiful and functional space that meets your unique needs and preferences, while also incorporating the latest trends and technologies in the industry.
+                    
+                    At our company, we prioritize collaboration with our clients, ensuring that every project is tailored to your specific requirements. We use the latest technology and techniques to ensure that every project is completed efficiently and effectively, while also prioritizing sustainability, safety, quality, and environmental responsibility.
+                    
+                    Thank you for considering our services. We look forward to the opportunity to work with you to bring your vision to life.</p>
+                
+            </div>
+  
+            
+  
+        </div>
+  
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+        sideNav.style.right == "-250px";
+        menuBtn.onclick = function () {
+          if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+            menu.src = "./images/bars.ico";
+          } else {
+            sideNav.style.right = "-250px";
+            menu.src ="./images/bars.ico";
+          }
+        };
+        // All animations will take exactly 500ms
+        var scroll = new SmoothScroll('a[href*="#"]', {
+          speed: 1000,
+          speedAsDuration: true,
+        });
+      </script>
+
+</body>
+</html>
